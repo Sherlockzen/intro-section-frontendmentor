@@ -8,16 +8,24 @@ import maker from './images/client-maker.svg'
 import meet from './images/client-meet.svg'
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [hidden, setHidden] = useState('')
+
+  const menuClick = () => {
+    setIsOpen(!isOpen);
+  }
 
   return (
   <>
     <div className=' font-Epilogue w-screen h-screen '>
       <header className=' p-4 flex justify-between items-center h-20'>
         <span className=' font-bold text-4xl'>snap</span>
-        <div className='menu-button'>
-          <img src={menuOpen} alt='open menu icon' />
-          <img src={menuClose} alt='close menu icon' className=' hidden' />
-        </div>        
+        <div onClick={menuClick} className='menu-button'>
+          {
+            isOpen ? <img src={menuClose} alt='close menu icon' /> : <img src={menuOpen} alt='open menu icon' />
+          }
+        </div>
+                
       </header>
       <img src={heroMobile} alt='a man holding a laptop' />
       <div className=' text-center p-3 flex flex-col gap-6'>
