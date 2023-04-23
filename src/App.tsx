@@ -25,7 +25,24 @@ function App() {
             isOpen ? <img src={menuClose} alt='close menu icon' /> : <img src={menuOpen} alt='open menu icon' />
           }
         </div>
-                
+        <div className=' flex absolute z-50 right-0 bottom-0 h-screen w-screen'>
+          <div className=' bg-black w-[45%] bg-opacity-60'></div>
+          <div className=' flex flex-col absolute z-50 right-0 bottom-0 w-[55%] h-screen bg-white'>
+            <div className=' flex justify-end px-4'>
+              <img className=' my-6' src={menuClose} alt='close menu icon' />
+            </div>
+            <div className=' flex flex-col gap-4 px-5 backdrop-opacity-0'>
+              <div className=' backdrop-opacity-80'>Features</div>
+              <div>Company</div>
+              <div>Careers</div>
+              <div>About</div>
+            </div>
+            <div className=' flex flex-col mt-8'>
+              <button>Login</button>
+              <button>Register</button>
+            </div>
+          </div>        
+        </div>
       </header>
       <img src={heroMobile} alt='a man holding a laptop' />
       <div className=' text-center p-3 flex flex-col gap-6'>
