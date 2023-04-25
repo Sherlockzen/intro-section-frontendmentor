@@ -36,20 +36,20 @@ function App() {
                 alt="arrow icon"
               />
             </div>
-            <div className=" flex flex-col gap-4 relative z-30 top-24 -left-40 w-40 items-center border-red-500 border-2">
-              <div className=" flex items-center gap-4 w-full">
+            <div className=" flex flex-col gap-4 relative z-30 top-24 -left-40 w-40 items-center bg-white rounded-lg drop-shadow-[0px_0px_14px_#d9d9d9] p-2 border-white">
+              <div className=" flex items-center gap-4 w-full ml-10">
                 <img src={todo} />
                 Todo List
               </div>
-              <div className=" flex items-center gap-4 w-full">
+              <div className=" flex items-center gap-4 w-full ml-10">
                 <img src={calendar} />
                 Calendar
               </div>
-              <div className=" flex items-center gap-4 w-full">
+              <div className=" flex items-center gap-4 w-full ml-10">
                 <img src={reminder} />
                 Reminders
               </div>
-              <div className=" flex items-center gap-4 w-full">
+              <div className=" flex items-center gap-4 w-full ml-10">
                 <img src={planning} />
                 Planning
               </div>
